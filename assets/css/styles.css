@@ -1,0 +1,142 @@
+:root {
+    --color-principal: #ffffff;
+    --color-secundario: #04B4E0;
+    --color-terciario: #000000;
+
+
+    --color-background: #F2F7F9;
+    --color-transparent: transparent;
+
+    --color-icon: #B5B6B7;
+    --color-subtitle: #9E9E9E;
+    --color-title: #222222;
+    --color-text: #555;
+
+    --color-border-reviews: #E5E6E7;
+    --color-company: #A5A6A7;
+
+    --color-background-certificate: #F5F5F5;
+    --color-background-contact: #FCFCFC;
+}
+html {
+    font-size: 10px;
+
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 200rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+    overflow: hidden;
+}
+
+.layout__header {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    padding: 10px;
+    text-align: center;
+}
+.layout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.menu {
+    background-color: #cceeff; /* Azul más claro */
+    padding: 20px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu ul li {
+    margin-bottom: 10px;
+    cursor: pointer; /* Cambiamos el cursor a pointer para indicar que es clickable */
+}
+.menu ul li:hover {
+    background-color: #a9d5f3; /* Cambiamos el color de fondo al pasar el cursor */
+}
+.submenu {
+    display: none; /* Ocultamos el submenú por defecto */
+    padding-left: 20px; /* Añadimos un poco de espacio a la izquierda para indentar */
+}
+.submenu ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #cceeff; /* Mismo color que el menú principal */
+}
+.submenu ul li {
+    margin-bottom: 5px;
+}
+.footer {
+    background-color: #f0f0f0; /* Gris claro */
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.login-form {
+    width: 60%;
+    padding: 20px;
+}
+.login-image {
+    width: 40%;
+    padding: 20px;
+}
+.login-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.recovery-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.recovery-container h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+}
